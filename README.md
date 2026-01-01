@@ -1,7 +1,7 @@
 # Toyo Toys - E-Project
 
 ## Project Overview
-This project is a professional frontend website developed for **Toyo Toys**, a toy company. It was created as part of my **DISM (Diploma In Information System Management) ** at **Aptech**.
+This project is a professional frontend website developed for **Toyo Toys**, a toy company. It was created as part of my **DISM (Diploma In Information System Management)** at **Aptech**.
 
 The goal of this project was to design a responsive, user-friendly interface that showcases products effectively and provides a modern shopping experience for customers.
 
