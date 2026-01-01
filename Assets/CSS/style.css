@@ -1,0 +1,628 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+ .body{
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+} 
+.wholebody {
+  background: linear-gradient(90deg, #87cefa, #ffb6c1);
+} 
+.tag-linebox {
+  height: 2rem;
+  background-color: #53b9fc;
+  padding: 6px;
+}
+.tag-line {
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 2px;
+  color: rgb(0, 0, 0);
+}
+
+/* FONTS CSS CLASS  */
+.dancing-script-regular {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: bolder;
+  font-style: normal;
+}
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-regular{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* FONTS CSS ENDED  */
+
+.navbar {
+  height: 4rem;
+  color: white;
+  background-color: #001752;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+.navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
+.navbar-nav .nav-link {
+  
+  color: white !important;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar-collapse {
+    background-color: #001752; 
+    padding: 10px 0; 
+    z-index: 1020; 
+}
+.navbar-nav .nav-link:hover {
+  color: #cfcfcf !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  
+}
+.dropdown-menu {
+  background-color: #001752 !important ;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+  color: white !important;
+  font-weight: 400;
+}
+.dropdown-item:hover {
+  background-color: #787878 !important;
+  color: rgb(0, 0, 0);
+}
+.search-bar .form-control {
+  background-color: #343a40; /* Dark background */
+  color: white;
+  border: 1px solid #495057;
+  border-radius: 25px 0 0 25px;
+  font-weight: 400;
+}
+.search-bar .form-control::placeholder {
+  color: #adb5bd;
+}
+.search-bar .btn {
+  background-color: #343a40;
+  border: 1px solid #495057;
+  color: white;
+  border-radius: 0 25px 25px 0;
+}
+.search-bar .btn:hover {
+  background-color: #495057;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* SEARCH INPUT ADDED FROM UI VERSE  */
+
+/* From Uiverse.io by LightAndy1 */
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 300px;
+}
+
+.input {
+  font-family: "Montserrat", sans-serif;
+  width: 130%;
+  height: 40px;
+  padding-left: 2.5rem;
+  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+  border: 0;
+  border-radius: 12px;
+  background-color: #16171d;
+  outline: none;
+  color: #bdbecb;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  fill: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* CAROUSEL BANNER CSS  */
+.b-btn{
+  position: absolute  ;
+  top: 64%;
+  left: 40%;
+  width: 23%;
+  height: 3.2rem;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+}
+.b-btn-a{
+  text-decoration: none;
+  /* color: black; */
+}
+
+.b-btn:hover{
+  height: 3.7rem;
+  transform: translateY(-8px);
+  color: white;
+  background-color: #481170;
+  box-shadow:0 2px 5px #541382;
+}
+.b-btn:active{
+  background-color: #541382;
+  transform: translateY(-8px);
+ color: white;
+  transition: 500ms;
+
+}
+
+.carousel-textbox {
+  background-color: rgba(179, 179, 179, 0.2);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  color: #000000;
+  position: absolute;
+  height: 600px;
+  top: 0%;
+  left: 45%;
+}
+#carousel-h1 {
+  margin-top: 80px;
+  font-size: 96px;
+  margin-left: 15px;
+}
+
+.carousel-textbox1 {
+  padding: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+  top: 0%;
+  left: 45%;
+}
+/* CAROUSEL BANNER CSS ENDED  */
+
+/* HERO SECTION (MAIN HEADING) */
+.hero-section {
+  background: linear-gradient(135deg, #3955ce 0%, #11224E 100%);
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+  border-radius: 0 0 50% 50%;
+}
+.hero-section h1 {
+  font-size: 96px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+/* HERO BUTTONS FROM UI VERSE  */
+
+/* From Uiverse.io by barisdogansutcu */
+.button1 {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(236, 236, 236);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+.active{
+  background-color:#8C1007; 
+  color: white;
+}
+
+.button1:hover {
+  letter-spacing: 3px;
+  background-color: hsl(236, 95%, 38%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(14, 0, 102) 0px 7px 29px 0px;
+}
+
+.button1:active {
+  letter-spacing: 3px;
+  background-color: hsl(236, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 2, 123) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* MAIN SECTION CSS  */
+
+.heading {
+  margin-top: 1rem;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  text-align: center;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 4px;
+  background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+  border-radius: 2px;
+}
+/* CATEGORY CARDS CSS STARTED  */
+
+.card {
+  margin: 18px;
+  /* margin-right: -5rem; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 2rem !important;
+  overflow: hidden;
+  height: 20rem;
+  cursor: pointer;
+               
+}
+.card-img-top{
+  height: 12rem;
+}
+.card-body {
+  background-color: #ececec;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  
+}
+
+.card-title {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px;
+}
+.card-subheading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #b4b4b4;
+}
+/* CARDS BUTTON IMPORTED FROM UI VERSE  */
+
+/* From Uiverse.io by satyamchaudharydev */
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+.icon {
+  width: 50px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+.button:hover .icon {
+  transform: translate(4px);
+}
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+
+#main-header {
+  text-align: center;
+  padding: 50px 10px 30px;
+}
+
+#header-title {
+  font-size: 2.5rem;
+  color: #2b3d66;
+  margin-bottom: 10px;
+}
+
+#header-subtitle {
+  color: #555;
+  font-size: 1rem;
+}
+
+#categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+}
+
+.category {
+  width: 220px;
+  height: 150px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #2b3d66;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.category:hover {
+  background:#25063b;
+  color: white;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 768px) {
+  .category {
+    width: 90%;
+  }
+}
+
+
+
+* REVIEWS SECTION CSS  */
+
+  #reviewCarousel .review-card {
+      max-width: 600px;
+      width: 90%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #reviewCarousel .review-card p {
+      color: black;
+    }
+
+    #reviewCarousel .review-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+#reviewCarousel .carousel-item {
+  background-color: transparent !important;
+  margin-top: 40px;
+}
+
+#reviewCarousel {
+  background-color: transparent !important;
+}
+
+    #reviewCarousel .carousel-control-prev-icon,
+    #reviewCarousel .carousel-control-next-icon {
+      background-color: black;
+      border-radius: 50%;
+      padding: 15px;
+    }
+
+    #reviewCarousel .carousel-indicators [data-bs-target] {
+      background-color: rgb(5, 5, 102);
+    }
+
+    .review-section {
+  background-color: transparent;
+}
+
+/* REVIEWS CSS ENDED */
+
+
+
+
+/* REVIEWS SECTION CSS  */
+
+
+/* .reviews-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.small-text {
+  font-size: 1.5rem;
+  color: #6f42c1;
+  margin-bottom: 10px;
+}
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+.testimonial-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.quote-icon {
+  font-size: 2rem;
+  color: #6f42c1;
+  margin-bottom: 15px;
+}
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.reviewer-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+}
+.dot.active {
+  background-color: #6f42c1;
+}
+ */
+
+/* REVIEWS CSS ENDED */
+
+/* FOOTER CSS STARTED */
+
+.footer {
+  background-color: #11224E;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: auto;
+  text-align: center;
+}
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #b6b6b6;
+}
+.footer .social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+
+    

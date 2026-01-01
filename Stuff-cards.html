@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stuffed Toys Collection - Toyo Toys</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+  <style>
+    body {
+      background-color: #B87C4C;
+
+      font-family: "Inter", sans-serif;
+    }
+
+    header {
+      background-color: #C4A484;
+    }
+
+    .attractive-heading {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    .ST-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      background-color: #F7F1DE;
+    }
+
+    .ST-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
+
+    .ST-card-img-top {
+      object-fit: cover;
+      height: 280px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 100%;
+    }
+
+    .ST-card-body {
+      padding: 1.5rem;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #000241;
+    }
+
+    .btn-sm {
+      height: 36px;
+      width: 180px;
+    }
+
+    .btn-buy {
+      background-color: #002f76;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .btn-buy:hover {
+      background-color: #001638;
+      color: white;
+    }
+
+    .btn-outline-secondary {
+      background-color: rgb(210, 226, 224);
+      color: black;
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TAG LINE  -->
+
+  <div class="tag-linebox">
+    <p class="tag-line montserrat-regular">
+      Free Delivery on orders above 2000Rs
+    </p>
+  </div>
+
+  <!-- NAVBAR STARTED  -->
+
+  <nav class="navbar navbar-expand-lg montserrat-regular">
+    <div class="container">
+      <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byAgeDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Age
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="Age1-3.html">Age 1-3</a></li>
+              <li><a class="dropdown-item" href="Age4-6.html">Age 4-6</a></li>
+              <li><a class="dropdown-item" href="Age7-9.html">Age 7-9</a></li>
+              <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byBrandDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Brand
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+              <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+              <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+              <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byCategoryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+              <li>
+                <a class="dropdown-item" href="OT-cards.html">Outdoor and Sports</a>
+              </li>
+              <li><a class="dropdown-item" href="Dolls.html">Dolls </a></li>
+              <li>
+                <a class="dropdown-item" href="AF-cards.html">RC and Action FIgures</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Stuff-cards.html">Stuffed Toys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+        <!-- SEARCH INPUT  -->
+
+        <!-- From Uiverse.io by LightAndy1 -->
+        <div class="group">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+              </path>
+            </g>
+          </svg>
+
+          <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR ENDED -->
+
+  <!-- Header Section -->
+  <header class="py-5  shadow-sm mb-5">
+    <div class="container heading">
+      <h1 class="display-3 fw-bolder text-center attractive-heading">
+        Stuffed Toys & Plushies
+      </h1>
+      <p class="lead text-center">
+        Cuddly companions for every age, crafted from the softest materials.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main ST-card Grid -->
+  <main class="container mb-5">
+
+    <!-- Start of Row 1 -->
+    <div class="row g-4 mb-4">
+      <!-- ST-card 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-1.jpg" class="ST-card-img-top" alt="Giant Teddy Bear" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Fluffy Bunny Trio</h5>
+            <p class="ST-card-text text-muted mb-2">set of three pastel plush rabbits (white, pink, beige)</p>
+            <div class="price mb-3">Rs. 1800</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-2.jpg" class="ST-card-img-top" alt="Fluffy Unicorn Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Sonic & Friends Plush </h5>
+            <p class="ST-card-text text-muted mb-2">
+              Sonic, Tails, and Knuckles stuffed figures
+            </p>
+            <div class="price mb-3">Rs. 1200</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-3.jpg" class="ST-card-img-top" alt="Cuddly Sloth" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Giraffe Family Plush</h5>
+            <p class="ST-card-text text-muted mb-2">
+              tall giraffe with two baby giraffes
+            </p>
+            <div class="price mb-3">Rs. 2100</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-4.jpg" class="ST-card-img-top" alt="Red Fox Plushie" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Octo Duo Plush</h5>
+            <p class="ST-card-text text-muted mb-2">
+              Reversible Octupus Style Plushes set
+            </p>
+            <div class="price mb-3">Rs. 2900</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Row 1 -->
+
+    <!-- Start of Row 2 -->
+    <div class="row g-4 mb-4">
+      <!-- ST-card 5-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-5.jpg" class="ST-card-img-top" alt="Sleepy Sheep Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Bunny Basket Buddies</h5>
+            <p class="ST-card-text text-muted mb-2">rabbit plushes in a basket wearing pastel bows</p>
+            <div class="price mb-3">Rs.1300</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 6 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-6.jpg" class="ST-card-img-top" alt="Baby Penguin Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Jurassic Dino Family</h5>
+            <p class="ST-card-text text-muted mb-2">mother dinosaur with baby dinos</p>
+            <div class="price mb-3">Rs.800</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 7 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-7.jpg" class="ST-card-img-top" alt="Blue Whale Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Aqua Whale Plush</h5>
+            <p class="ST-card-text text-muted mb-2">
+              Colorful Ocean friend collection Set
+            </p>
+            <div class="price mb-3">Rs.950</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 8 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-8.jpg" class="ST-card-img-top" alt="Koala Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Colorful Cuddle Koala</h5>
+            <p class="ST-card-text text-muted mb-2">Holding a leafy branch Koalas</p>
+            <div class="price mb-3">Rs.1400</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Row 2 -->
+
+    <!-- Start of Row 3 -->
+    <div class="row g-4 mb-4">
+      <!-- ST-card 9 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-9.jpg" class="ST-card-img-top" alt="Bunny Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Hop the Bunny</h5>
+            <p class="ST-card-text text-muted mb-2">Perfect Easter gift</p>
+            <div class="price mb-3">Rs.800</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 10 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-10.jpg" class="ST-card-img-top" alt="Smiling Sun Pillow" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Sunny Pillow</h5>
+            <p class="ST-card-text text-muted mb-2">Brightens any room</p>
+            <div class="price mb-3">Rs.900</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 11-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-11.jpg" class="ST-card-img-top" alt="Dino T-Rex Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Roaring Dino Rex</h5>
+            <p class="ST-card-text text-muted mb-2">
+              Surprisingly soft scales
+            </p>
+            <div class="price mb-3">Rs.600</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 12-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-12.jpg" class="ST-card-img-top" alt="Alpaca Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Fluffy Alpaca</h5>
+            <p class="ST-card-text text-muted mb-2">Made with faux fleece</p>
+            <div class="price mb-3">Rs.950</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Row 3 -->
+
+    <!-- Start of Row 4 -->
+    <div class="row g-4">
+      <!-- ST-card 13 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-13.jpg" class="ST-card-img-top" alt="Octopus Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Octo Friend</h5>
+            <p class="ST-card-text text-muted mb-2">Eight squeezable arms</p>
+            <div class="price mb-3">Rs.1600</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 14 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-14.jpg" class="ST-card-img-top" alt="Avocado Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Avocado Pal</h5>
+            <p class="ST-card-text text-muted mb-2">Trendy fruit plushie</p>
+            <div class="price mb-3">Rs.2300</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 15 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-15.jpg" class="ST-card-img-top" alt="Space Alien Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Cosmic Alien</h5>
+            <p class="ST-card-text text-muted mb-2">Glow-in-the-dark eyes</p>
+            <div class="price mb-3">Rs.1900</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST-card 16 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ST-card">
+          <img src="Assets/Images/Stuffed-16.jpg" class="ST-card-img-top" alt="Golden Retriever Plush" />
+          <div class="ST-card-body text-center">
+            <h5 class="ST-card-title fw-semibold">Goldy Pup</h5>
+            <p class="ST-card-text text-muted mb-2">Lifelike dog companion</p>
+            <div class="price mb-3">Rs.650</div>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Add to Cart</a>
+              <a href="#" class="btn btn-buy btn-sm rounded-pill">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Row 4 -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5>ToyoToys</h5>
+          <p>
+            Bringing joy and imagination to children everywhere with safe,
+            fun, and creative toys.
+          </p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+            <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+            <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+            <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Contact Us</h5>
+          <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+          <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+
+</html>

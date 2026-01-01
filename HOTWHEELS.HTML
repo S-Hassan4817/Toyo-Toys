@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hot Wheels Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"  
+    />
+  <style>
+    .hcard {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.35s ease;
+      position: relative;
+    }
+
+    .hcard:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .wishlist {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+      z-index: 2;
+    }
+
+    .wishlist:hover {
+      background-color: #ef4444;
+    }
+
+    .wishlist:hover svg {
+      stroke: #fff;
+      transform: scale(1.1);
+    }
+
+    .product-image {
+      overflow: hidden;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .hcard:hover .product-image img {
+      transform: scale(1.08);
+    }
+
+    .hcard-body {
+      padding: 1rem 1.25rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stars svg {
+      margin-right: 3px;
+      transition: transform 0.2s ease;
+    }
+
+    .stars svg:hover {
+      transform: scale(1.2);
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1rem;
+    }
+
+    .hcard-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111827;
+      margin: 0.75rem 0 1rem;
+      line-height: 1.4;
+    }
+
+    .add-btn {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      border: none;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .add-btn:hover {
+      background: linear-gradient(135deg, #ee0979, #ff6a00);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(238, 9, 121, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .product-image img {
+        height: 200px;
+      }
+    }
+
+    .hcard-footer {
+      padding: 1rem;
+      background: transparent;
+      border-top: 0;
+    }
+  </style>
+</head>
+
+<body style="background: linear-gradient(135deg, #13cffa 50%, #ff7818 50%);">
+
+  <!-- TAG LINE  -->
+
+  <div class="tag-linebox">
+    <p class="tag-line montserrat-regular">
+      Free Delivery on orders above 2000Rs
+    </p>
+  </div>
+
+  <!-- NAVBAR STARTED  -->
+
+  <nav class="navbar navbar-expand-lg montserrat-regular">
+    <div class="container">
+      <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byAgeDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Age
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="Age1-3.html">Age 1-3</a></li>
+              <li><a class="dropdown-item" href="Age4-6.html">Age 4-6</a></li>
+              <li><a class="dropdown-item" href="Age7-9.html">Age 7-9</a></li>
+              <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byBrandDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Brand
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+              <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+              <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+              <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byCategoryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+              <li>
+                <a class="dropdown-item" href="OT-cards.html">Outdoor and Sports</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Dolls.html">Dolls </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="AF-cards.html">RC and Action FIgures</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Stuff-cards.html">Stuffed Toys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+        <!-- SEARCH INPUT  -->
+
+        <!-- From Uiverse.io by LightAndy1 -->
+        <div class="group">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+              </path>
+            </g>
+          </svg>
+
+          <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR ENDED -->
+
+
+  <!-- PAGE BANNER STARTED -->
+
+  <img src="Assets/Images/hotbanner.jpg" alt="banner" style="width: 100%; height: 400px;">
+
+  <!-- PAGE BANNER ENDED  -->
+
+  <!-- MAIN CARDS STARTED  -->
+
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT1.jpg" alt="LEGO City Farm">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.9</div>
+              <div class="rating-count"> (17)</div>
+              <div class="ms-auto price text-end">Rs. 2000</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels City T-Rex Blaze Battle Playset with 1:64 Scale Die-Cast Vehicle</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT2.jpg" alt="LEGO Friendship Camper Van">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.8</div>
+              <div class="rating-count"> (22)</div>
+              <div class="ms-auto price text-end">Rs. 2500</div>
+            </div>
+
+            <h3 class="hcard-title">Tara Toy Hot Wheels ZipBin Wheelie 100-Car Storage with Race Track</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT3.jpg" alt="LEGO Harry Potter">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+
+                <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="half">
+                      <stop offset="50%" stop-color="#ef4444" />
+                      <stop offset="50%" stop-color="#e6e6e6" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z"
+                    fill="url(#half)" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.5</div>
+              <div class="rating-count"> (21)</div>
+              <div class="ms-auto price text-end">Rs. 2000</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels RC Monster Trucks - Rhinomite Transformer - Dual Scale</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- hcard 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT4.jpg" alt="LEGO City Farm">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.9</div>
+              <div class="rating-count"> (17)</div>
+              <div class="ms-auto price text-end">Rs. 1500</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels City Mega 4-Level Garage Playset with 60+ Car Storage</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT5.jpg" alt="LEGO Friendship Camper Van">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.8</div>
+              <div class="rating-count"> (22)</div>
+              <div class="ms-auto price text-end">Rs. 2000</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels 100 Car Storage Case with Telescoping Handle and Rolling Wheels</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT6.jpg" alt="LEGO Harry Potter">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+
+                <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="half">
+                      <stop offset="50%" stop-color="#ef4444" />
+                      <stop offset="50%" stop-color="#e6e6e6" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z"
+                    fill="url(#half)" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.5</div>
+              <div class="rating-count"> (21)</div>
+              <div class="ms-auto price text-end">Rs. 2500</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels Monster Trucks RC Rageasaur - Remote Control Toy Truck</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- hcard 7 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT7.jpg" alt="LEGO City Farm">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.9</div>
+              <div class="rating-count"> (17)</div>
+              <div class="ms-auto price text-end">Rs. 1000</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels City Super Recharge Fuel Station Diecast Car Playset</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 8 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT8.jpg" alt="LEGO Friendship Camper Van">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.8</div>
+              <div class="rating-count"> (22)</div>
+              <div class="ms-auto price text-end">Rs. 3000</div>
+            </div>
+
+            <h3 class="hcard-title">Mega Bloks Hot Wheels Mercedes-Benz 300 SL Collector's Edition Building Set - 1600
+              Pieces</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 9 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT9.jpg" alt="LEGO Harry Potter">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+
+                <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="half">
+                      <stop offset="50%" stop-color="#ef4444" />
+                      <stop offset="50%" stop-color="#e6e6e6" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z"
+                    fill="url(#half)" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.5</div>
+              <div class="rating-count"> (21)</div>
+              <div class="ms-auto price text-end">Rs. 2500</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels Mario Kart Bowser's Castle 1:64 Scale Track Set with Kamek Vehicle</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- hcard 10 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT10.jpg" alt="LEGO City Farm">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.9</div>
+              <div class="rating-count"> (17)</div>
+              <div class="ms-auto price text-end">Rs. 1000</div>
+            </div>
+
+            <h3 class="hcard-title">Tara Toy Hot Wheels ZipBin Ramp It Up Play and Storage Bin</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn"> Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 11 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="Assets/Images/HOT11.jpg" alt="LEGO Friendship Camper Van">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.8</div>
+              <div class="rating-count"> (22)</div>
+              <div class="ms-auto price text-end">Rs. 3000</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels Ultimate Dual Dragon Transporter Toy Cars</h3>
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hcard 12 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="hcard product-hcard position-relative h-100">
+          <button class="btn btn-light wishlist shadow-sm" title="Add to wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+              stroke="#0f172a">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </button>
+
+          <div class="product-image">
+            <img src="/Eproject/Assets/Images/HOT12.jpg" alt="LEGO Harry Potter">
+          </div>
+
+          <div class="hcard-body d-flex flex-column">
+            <div class="rating mb-2">
+              <div class="stars" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444">
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z" />
+                </svg>
+
+                <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="half">
+                      <stop offset="50%" stop-color="#ef4444" />
+                      <stop offset="50%" stop-color="#e6e6e6" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.169L12 18.896 4.664 23.166l1.402-8.169L.132 9.21l8.2-1.192L12 .587z"
+                    fill="url(#half)" />
+                </svg>
+              </div>
+              <div style="margin-left:.25rem; font-weight:700; color:#111827;">4.5</div>
+              <div class="rating-count"> (21)</div>
+              <div class="ms-auto price text-end">Rs. 2500</div>
+            </div>
+
+            <h3 class="hcard-title">Hot Wheels Portable 30-Car Collector Case with Retro Wheel Design</h3>
+
+            <div class="mt-auto hcard-footer">
+              <button class="btn btn-primary w-100 add-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAIN CARDS ENDED  -->
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>ToyoToys</h5>
+            <p>
+              Bringing joy and imagination to children everywhere with safe,
+              fun, and creative toys.
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="newarrivals.html">New Arrivals</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+              <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+              <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+              <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Contact Us</h5>
+            <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+            <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

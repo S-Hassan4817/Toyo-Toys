@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolls Collection - Toyo Toys</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #FFDBB6; 
+
+        font-family: "Inter", sans-serif;
+      }
+      .header {
+        background-color: #F7A5A5;
+        
+      }
+      .attractive-heading {
+        color: #001F3F;
+        font-family: "Inter", sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
+      }
+      .card1 {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        background-color: #FFF2EF;
+      }
+
+      .card1:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+      }
+
+      
+      .card1-img-top {
+        object-fit: cover;
+        height: 250px; 
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .card1-body {
+        padding: 1.5rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #970079; 
+      }
+      .btn-sm{
+        height: 36px;
+        width: 180px;
+        }
+      .btn-buy{
+        background-color: #002f76;
+        color: white;
+        font-family: "Montserrat" , sans-serif;
+      }
+      .btn-buy:hover{
+        background-color: #001638;
+        color: white;
+      }
+      .btn-outline-secondary{
+        background-color: rgb(210, 226, 224);
+        color: black;
+        font-family: "Montserrat" , sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TAG LINE  -->
+
+    <div class="tag-linebox">
+      <p class="tag-line montserrat-regular">
+        Free Delivery on orders above 2000Rs
+      </p>
+    </div>
+
+    <!-- NAVBAR STARTED  -->
+
+    <nav class="navbar navbar-expand-lg montserrat-regular">
+      <div class="container">
+        <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="byAgeDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                By Age
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                <li><a class="dropdown-item" href="Age1-3.html">Age 1 - 3</a></li>
+                <li><a class="dropdown-item" href="Age4-6.html">Age 4 - 6</a></li>
+                <li><a class="dropdown-item" href="Age7-9.html">Age 7 - 9</a></li>
+                <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+              </ul>
+            </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="byBrandDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  By Brand
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                  <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+                  <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+                  <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+                  <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+                </ul>
+              </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="byCategoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                By Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+                <li>
+                  <a class="dropdown-item" href="OT-cards.html"
+                    >Outdoor and Sports</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="Dolls.html">Dolls </a></li>
+                <li>
+                  <a class="dropdown-item" href="AF-cards.html"
+                    >RC and Action FIgures</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Stuff-cards.html"
+                    >Stuffed Toys</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+          <!-- SEARCH INPUT  -->
+
+          <!-- From Uiverse.io by LightAndy1 -->
+          <div class="group">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+
+            <input
+              id="query"
+              class="input"
+              type="search"
+              placeholder="Search..."
+              name="searchbar"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR ENDED -->
+
+    <!-- Header Section -->
+    <header class="py-5 header shadow-sm mb-5">
+      <div class="container">
+        <h1
+          class="display-3  text-center attractive-heading"
+        >
+          Dolls and Doll House
+        </h1>
+        <p class="lead text-center text-muted">
+          Discover our exclusive range of handcrafted dolls, perfect for every
+          enthusiast.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main cards Grid -->
+    <main class="container mb-5">
+      <!-- Start of Row 1 -->
+      <div class="row g-4 mb-4">
+        <!-- card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-1.jpg"
+              class="card1-img-top"
+              alt="Princess Aura Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Dream Palace Dollhouse</h5>
+              <p class="card1-text text-muted mb-2">pink multi-room mansion playset</p>
+              <div class="price mb-3">Rs. 2000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-2.jpg"
+              class="card1-img-top"
+              alt="Astronaut Sky Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Baby Feeding Highchair Set</h5>
+              <p class="card1-text text-muted mb-2">baby doll with pink highchair & meal tray</p>
+              <div class="price mb-3">Rs. 800</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-3.jpg"
+              class="card1-img-top"
+              alt="Gardener Willow Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Garden Beauty Makeup Case</h5>
+              <p class="card1-text text-muted mb-2">portable doll makeup & craft box</p>
+              <div class="price mb-3">Rs. 2500</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-4.jpg"
+              class="card1-img-top"
+              alt="Chef Julia Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Royal Café Play Tower Playset</h5>
+              <p class="card1-text text-muted mb-2">multi-level blue bakery/café dollhouse playset for girls</p>
+              <div class="price mb-3">Rs. 3000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 1 -->
+
+      <!-- Start of Row 2 -->
+      <div class="row g-4 mb-4">
+        <!-- card 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-5.jpg"
+              class="card1-img-top"
+              alt="Dancer Elisa Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Light-Up Dancing Dolls</h5>
+              <p class="card1-text text-muted mb-2">two dolls with glowing LED dresses</p>
+              <div class="price mb-3">Rs. 1500</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-6.jpg"
+              class="card1-img-top"
+              alt="Explorer Finn Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Mega Mansion Dollhouse</h5>
+              <p class="card1-text text-muted mb-2">tall 3-story pink home with furniture</p>
+              <div class="price mb-3">Rs. 4000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-7.jpg"
+              class="card1-img-top"
+              alt="Veterinarian Mia Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Pet Care Vet Clinic Playset</h5>
+              <p class="card1-text text-muted mb-2">dollhouse for animals and vet accessories</p>
+              <div class="price mb-3">Rs. 2400</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-8.jpg"
+              class="card1-img-top"
+              alt="Pop Star Lola Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Frozen Style Fashion Dolls</h5>
+              <p class="card1-text text-muted mb-2">two ice princess dolls in blue gowns</p>
+              <div class="price mb-3">Rs. 2800</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 2 -->
+
+      <!-- Start of Row 3 -->
+      <div class="row g-4 mb-4">
+        <!-- card 9 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-9.jpg"
+              class="card1-img-top"
+              alt="Skater Zoe Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Fashion Studio Barbie Playset</h5>
+              <p class="card1-text text-muted mb-2">doll with vanity, clothes rack, and accessories</p>
+              <div class="price mb-3">Rs. 2700</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-10.jpg"
+              class="card1-img-top"
+              alt="Pilot Alex Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Princess Tent Playhouse</h5>
+              <p class="card1-text text-muted mb-2">pink tent play area with two dolls and accessories</p>
+              <div class="price mb-3">Rs. 3200</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-11.jpg"
+              class="card1-img-top"
+              alt="Swimmer Coral Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Barbie Family Beach Set</h5>
+              <p class="card1-text text-muted mb-2">Barbie and Ken-style dolls with a child doll</p>
+              <div class="price mb-3">Rs. 1400</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-12.jpg"
+              class="card1-img-top"
+              alt="Athlete Kira Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Convertible Sports Car & Doll</h5>
+              <p class="card1-text text-muted mb-2">pink car with blonde fashion doll</p>
+              <div class="price mb-3">Rs. 1200</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 3 -->
+
+      <!-- Start of Row 4 -->
+      <div class="row g-4">
+        <!-- card 13 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-13.jpg"
+              class="card1-img-top"
+              alt="Fairy Lumi Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Baby Nurse Care </h5>
+              <p class="card1-text text-muted mb-2">nursery station with baby doll and medical tools</p>
+              <div class="price mb-3">Rs. 4200</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 14 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-14.jpg"
+              class="card1-img-top"
+              alt="Photographer Sam Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Butterfly Fairy Doll</h5>
+              <p class="card1-text text-muted mb-2">winged fairy doll with rolling pet accessory</p>
+              <div class="price mb-3">Rs. 1300</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 15 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-15.jpg"
+              class="card1-img-top"
+              alt="Musician Jade Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Pop Star Trio Dolls </h5>
+              <p class="card1-text text-muted mb-2">three dolls with microphones & glitter outfits</p>
+              <div class="price mb-3">Rs. 3800</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 16 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card1">
+            <img
+              src="Assets/Images/Doll-16.jpg"
+              class="card1-img-top"
+              alt="Historian Leo Doll"
+            />
+            <div class="card1-body text-center">
+              <h5 class="card1-title fw-semibold">Baby Born Bath Doll</h5>
+              <p class="card1-text text-muted mb-2">baby doll with bathtub and feeding bottle set</p>
+              <div class="price mb-3">Rs. 2100</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 4 -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>ToyoToys</h5>
+            <p>
+              Bringing joy and imagination to children everywhere with safe,
+              fun, and creative toys.
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="newarrivals.html">New Arrivals</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+              <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+              <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+              <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Contact Us</h5>
+            <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+            <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    
+</body>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</html>

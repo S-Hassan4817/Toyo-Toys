@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age 4 - 6 Toys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <style>
+
+        body {
+            background-color: #FFC29B; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        .toy-card-wrapper {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border-radius: 12px; 
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+            height: 100%; 
+        }
+
+        .toy-card-wrapper:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .toy-image {
+            height: 250px; 
+            background-color: #e9ecef; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: #6c757d;
+            border-bottom: 1px solid #dee2e6;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .toy-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .toy-card-content {
+            padding: 1rem;
+            background-color: #ffffff;
+            height: 100%;
+        }
+
+        .toy-title {
+            font-weight: 700;
+            color: #343a40;
+            margin-bottom: 0.5rem;
+        }
+
+        .toy-text {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .toy-price{
+            color: black;
+            font-size: 1.3rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        .main-header {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #0f2631;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .card-row {
+            margin-bottom: 1.5rem;
+        }
+
+        .toy-button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            gap: 8px; 
+        }
+
+        .btn-add-to-cart, .btn-buy-now {
+            font-family: "Montserrat" , sans-serif;
+            width: 50%;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 6px;
+            padding: 8px 0;
+            text-align: center;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btn-add-to-cart {
+            background-color: #415E72;
+            border: 1px solid #0d6efd;
+        }
+
+        .btn-buy-now {
+            background-color: #0f2631; 
+            border: 1px solid #198754;
+        }
+
+        .btn-add-to-cart:hover, .btn-buy-now:hover {
+            background-color: #2d0981; 
+            border-color: #00458f;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TAG LINE  -->
+
+      <div class="tag-linebox">
+        <p class="tag-line montserrat-regular">
+          Free Delivery on orders above 2000Rs
+        </p>
+      </div>
+
+      <!-- NAVBAR STARTED  -->
+
+      <nav class="navbar navbar-expand-lg montserrat-regular">
+        <div class="container">
+          <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="byAgeDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  By Age
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                  <li><a class="dropdown-item" href="Age1-3.html">Age 1-3</a></li>
+                  <li><a class="dropdown-item" href="Age4-6.html">Age 4-6</a></li>
+                  <li><a class="dropdown-item" href="Age7-9.html">Age 7-9</a></li>
+                  <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+                </ul>
+              </li>
+
+                <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="byBrandDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  By Brand
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                  <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+                  <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+                  <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+                  <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="byCategoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  By Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+                  <li>
+                    <a class="dropdown-item" href="OT-cards.html"
+                      >Outdoor and Sports</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Dolls.html">Dolls </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="AF-cards.html"
+                      >RC and Action FIgures</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Stuff-cards.html"
+                      >Stuffed Toys</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <!-- SEARCH INPUT  -->
+
+            <!-- From Uiverse.io by LightAndy1 -->
+            <div class="group">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                <g>
+                  <path
+                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                  ></path>
+                </g>
+              </svg>
+
+              <input
+                id="query"
+                class="input"
+                type="search"
+                placeholder="Search..."
+                name="searchbar"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- NAVBAR ENDED -->
+
+
+    <div class="container">
+        <!-- Header -->
+        <h1 class="main-header montserrat-regular">Age 4 - 6</h1>
+
+        <div class="row card-row g-4">
+            <!-- Row 1: 4 Cards -->
+            <!-- Card 1  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg1.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Blaze Storm Soft Bullet Gun</h5>
+                        <p class="toy-text">Foam dart blaster for safe and exciting action play.</p>
+                        <p class="toy-price">Rs.2300</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg2.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Disney Frozen Strategy Board Game</h5>
+                        <p class="toy-text">Fun turn-taking board game featuring your favorite Frozen.</p>
+                        <p class="toy-price">Rs.800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg3.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Ben 10 Three-Wheel Scooter</h5>
+                        <p class="toy-text">Sturdy three-wheel scooter for balance and outdoor fun.</p>
+                        <p class="toy-price">Rs.1200</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg4.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Off-Road Remote Control Car</h5>
+                        <p class="toy-text">Durable remote-control car built for rough terrain and stunts.</p>
+                        <p class="toy-price">Rs.1800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Row 2: 4 Cards -->
+            <!-- Card 5  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg5.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">STEM Science Experiment Car Kit</h5>
+                        <p class="toy-text">Hands-on car kit teaching kids basic motion and energy concepts.</p>
+                        <p class="toy-price">Rs.2800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg6.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">50-Piece Transparent Jigsaw Puzzle</h5>
+                        <p class="toy-text">Bright and clear puzzle pieces for visual learning and coordination.</p>
+                        <p class="toy-price">Rs.600</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg7.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Mini Electronic Piano Keyboard</h5>
+                        <p class="toy-text">MPortable beginner keyboard with demo songs and fun sound effects.</p>
+                        <p class="toy-price">Rs.800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg8.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">DIY Rainbow Craft & Sticker Set</h5>
+                        <p class="toy-text">Transitioning to independent reading.</p>
+                        <p class="toy-price">Rs.800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: 4 Cards -->
+            <!-- Card 9  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg9.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Beyblade Burst Spinning Battle Set</h5>
+                        <p class="toy-text">Action-packed battle tops with launcher for head-to-head play.</p>
+                        <p class="toy-price">Rs.300</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg10.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Ninja Building Block Set</h5>
+                        <p class="toy-text">Build and play with heroic ninja figures and action scenes.</p>
+                        <p class="toy-price">Rs.3800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg11.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Electric Soft Bullet Rifle Blaster</h5>
+                        <p class="toy-text">Battery-powered soft dart gun for safe shooting games.</p>
+                        <p class="toy-price">Rs.2800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg12.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Pokemon Card collection kit</h5>
+                        <p class="toy-text">Play and enjoy with beautiful pokemon cards.</p>
+                        <p class="toy-price">Rs.800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: 4 Cards -->
+            <!-- Card 13  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg13.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Marvel Iron Man Mask (Hard)</h5>
+                        <p class="toy-text">Light-up superhero mask for imaginative Marvel play.</p>
+                        <p class="toy-price">Rs.5000</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 14 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg14.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Wireless Game Controller Pair</h5>
+                        <p class="toy-text">Twin controllers for cooperative gaming sessions.</p>
+                        <p class="toy-price">Rs.1400</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 15  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg15.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Beautiful Unicorn Plush Toy</h5>
+                        <p class="toy-text">Soft and magical unicorn plush for comforting playtime.</p>
+                        <p class="toy-price">Rs.800</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 16  -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="toy-card-wrapper">
+                    <div class="toy-image">
+                        <img src="Assets/Images/imgg16.jpg" alt="Toy Image" >
+                    </div>
+                    <div class="toy-card-content">
+                        <h5 class="toy-title">Remote Control Racing Superbike</h5>
+                        <p class="toy-text">Remote-controlled superbike for high-speed fun indoors or outdoors.</p>
+                        <p class="toy-price">Rs.600</p>
+                        <div class="toy-button-group">
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn-buy-now">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>ToyoToys</h5>
+            <p>
+              Bringing joy and imagination to children everywhere with safe,
+              fun, and creative toys.
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="newarrivals.html">New Arrivals</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+              <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+              <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+              <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Contact Us</h5>
+            <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+            <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

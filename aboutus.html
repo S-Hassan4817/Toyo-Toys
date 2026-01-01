@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ToyoToys</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #2875cd 0%, #1a1682 100%);
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-section {
+        background: linear-gradient(135deg, #000b34 0%, #007bbd 100%);
+        color: white;
+        padding: 120px 0;
+        text-align: center;
+        border-radius: 0 0 50% 50%;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .row.my-5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-right: 55px;
+    }
+
+    .col-md-4 {
+        flex: 1 1 300px;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #2a18b8 0%, #040b96 100%);
+        color: black;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-body {
+        padding: 30px 25px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #180076;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #ff6b6b;
+    }
+
+    .btn-custom {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+
+    .btn-custom:hover {
+        background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    }
+
+    .story-section {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        padding: 40px;
+        margin: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+        .col-md-4 {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- TAG LINE  -->
+
+    <div class="tag-linebox">
+        <p class="tag-line montserrat-regular">Free Delivery on orders above 2000Rs</p>
+    </div>
+
+    <!-- NAVBAR STARTED  -->
+
+    <nav class="navbar navbar-expand-lg  montserrat-regular">
+        <div class="container">
+            <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="byAgeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            By Age
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                            <li><a class="dropdown-item" href="Age1-3.html">Age 1 - 3</a></li>
+                            <li><a class="dropdown-item" href="Age4-6.html">Age 4 - 6</a></li>
+                            <li><a class="dropdown-item" href="Age7-9.html">Age 7 - 9</a></li>
+                            <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="byBrandDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            By Brand
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                            <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+                            <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+                            <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+                            <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="byCategoryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            By Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+                            <li><a class="dropdown-item" href="OT-cards.html">Outdoor and Sports</a></li>
+                            <li><a class="dropdown-item" href="Dolls.html">Dolls </a></li>
+                            <li><a class="dropdown-item" href="AF-cards.html">RC and Action FIgures</a></li>
+                            <li><a class="dropdown-item" href="Stuff-cards.html">Stuffed Toys</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <!-- SEARCH INPUT  -->
+
+                <!-- From Uiverse.io by LightAndy1 -->
+                <div class="group">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+
+                    <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR ENDED -->
+
+
+
+
+    <!-- HERO HEADING DIV STARTING -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div data-aos-easing="linear" data-aos-duration="1000"></div>
+            <h1 data-aos="fade-down" style="font-size: 4rem;">Welcome to ToyoToys!</h1>
+            <p class="lead">Where imagination meets fun! Discover our colorful world of toys since 2010.</p>
+            <a href="index.html" style="color: white; text-decoration: none;"><button class="button1 active">Shop
+                    Now</button></a>
+            <a href="aboutus.html"><button class="button1" type="button">Learn More</button></a>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <div class="container my-5">
+        <div id="story" class="story-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="margin-top: 30px; color: #001058;">Our Vibrant Story</h2>
+                    <p> ToyoToys burst into life in 2010 with a rainbow of ideas to make playtime truly extraordinary.
+                        What began as a small spark of imagination in a cozy, colorful workshop soon blossomed into a
+                        global playground of creativity and happiness.
+                        <br>
+                        <br>
+                        Every toy we design carries a story. A story of wonder, learning, and joy. From cuddly plush
+                        friends to exciting playsets that fuel young imaginations, each creation is made with love,
+                        care, and vibrant colors that light up little hearts.
+                        <br>
+                        <br>
+                        At ToyoToys, we believe play is more than fun. Its the foundation of growth. That’s why our toys
+                        are built with safety, durability, and inspiration at their core, encouraging kids to dream big,
+                        explore fearlessly, and create magical moments every day.
+                        <br>
+                        <br>
+                        As we continue to grow, our mission remains the same: to fill childhoods with color, laughter,
+                        and endless possibilities because every child deserves a world that sparks joy and creativity.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Assets/Images/aboutb.jpg" alt="ToyoToys Workshop" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div id="card1" class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Our Mission</h5>
+                        <p class="card-text">To paint the world with joy through innovative, safe, and eco-friendly toys
+                            that inspire creativity and happy adventures.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card2" class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Our Values</h5>
+                        <p class="card-text">Vibrancy, safety, innovation, and sustainability. Our colorful core that
+                            drives every toy we create.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card3" class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Our Promise</h5>
+                        <p class="card-text">Each toy is a burst of color and quality, tested for safety and built to
+                            last through countless joyful moments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4" style="color: #ffffff;">Meet Our Colorful Team</h2>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="team-member">
+                    <img src="Assets/Images/team3.jpg" alt="Alice Johnson">
+                    <h5 style="color: white;" class="mt-3">Umaima Arif</h5>
+                    <p style="color: white;">Team Member</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="team-member">
+                    <img src="Assets/Images/team2.jpg" alt="Bob Smith">
+                    <h5 style="color: white;" class="mt-3">Sufiyan Khan</h5>
+                    <p style="color: white;">Team Member</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="team-member">
+                    <img src="Assets/Images/team1.jpg" alt="Carol Lee">
+                    <h5 style="color: white;" class="mt-3">Syed Hassan Ali</h5>
+                    <p style="color: white;">Team Member</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>ToyoToys</h5>
+                    <p>
+                        Bringing joy and imagination to children everywhere with safe,
+                        fun, and creative toys.
+                    </p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="newarrivals.html">New Arrivals</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+                        <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+                        <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+                        <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+                    <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

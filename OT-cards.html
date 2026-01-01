@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor and Sports Toys - Toyo Toys</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+    
+      body {
+       background-color: #305669;
+        font-family: "Inter", sans-serif;
+      }
+
+      header{
+         background-color: #95afca; 
+      }
+     
+      .attractive-heading {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        color: black;
+      }
+
+      .OT-card {
+        border: none; 
+        border-radius: 12px; 
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        width: 17rem;
+        background-color: #e6e6e6;
+      }
+
+      
+      .OT-card:hover {
+        transform: translateY(-8px); 
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); 
+      }
+
+      
+      .OT-card-img-top {
+        object-fit: cover;
+        height: 280px; 
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .OT-card-body {
+        padding: 1.5rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #00183d;
+      }
+      .btn-sm{
+        height: 36px;
+        width: 180px;
+      }
+      .btn-buy{
+        background-color: #002f76;
+        color: white;
+        font-family: "Montserrat" , sans-serif;
+      }
+      .btn-buy:hover{
+        background-color: #001638;
+        color: white;
+      }
+      .btn-outline-secondary{
+        background-color: rgb(210, 226, 224);
+        color: black;
+        font-family: "Montserrat" , sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TAG LINE  -->
+
+    <div class="tag-linebox">
+      <p class="tag-line montserrat-regular">
+        Free Delivery on orders above 2000Rs
+      </p>
+    </div>
+
+    <!-- NAVBAR STARTED  -->
+
+    <nav class="navbar navbar-expand-lg montserrat-regular">
+      <div class="container">
+        <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="byAgeDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                By Age
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                <li><a class="dropdown-item" href="Age1-3.html">Age 1 - 3</a></li>
+                <li><a class="dropdown-item" href="Age4-6.html">Age 4 - 6</a></li>
+                <li><a class="dropdown-item" href="Age7-9.html">Age 7 - 9</a></li>
+                <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+              </ul>
+            </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="byBrandDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  By Brand
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+                  <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+                  <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+                  <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+                  <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+                </ul>
+              </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="byCategoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                By Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+                <li>
+                  <a class="dropdown-item" href="OT-cards.html"
+                    >Outdoor and Sports</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Dolls.html">Dolls </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="AF-cards.html"
+                    >RC and Action FIgures</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Stuff-cards.html"
+                    >Stuffed Toys</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+          <!-- SEARCH INPUT  -->
+
+          <!-- From Uiverse.io by LightAndy1 -->
+          <div class="group">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+
+            <input
+              id="query"
+              class="input"
+              type="search"
+              placeholder="Search..."
+              name="searchbar"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR ENDED -->
+
+    <!-- Header Section -->
+    <header class="py-5 header shadow-sm mb-5">
+      <div class="container">
+        <h1
+          class="display-3 fw-bolder text-center montserrat-regular attractive-heading"
+        >
+          Outdoor and Sports Toys
+        </h1>
+        <p class="lead text-center text-muted">
+          Get active! Explore our selection of gear for backyard fun and
+          athletic play.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main OT-card Grid -->
+    <main class="container mb-5">
+
+      <!-- Start of Row 1 -->
+      <div class="row g-4 mb-4">
+        <!-- OT-card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS1.jpg"
+              class="OT-card-img-top"
+              alt="Pro Soccer Ball"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Nike Flight</h5>
+              <p class="OT-card-text text-muted mb-2">foam glider planes + handheld launcher</p>
+              <div class="price mb-3">Rs. 2000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS2.jpg"
+              class="OT-card-img-top"
+              alt="Ultimate Frisbee Set"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Glow Sports Wiffleball
+              </h5>
+              <p class="OT-card-text text-muted mb-2">
+                Brightly glows for fun night-time backyard baseball.
+              </p>
+              <div class="price mb-3">Rs. 900</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS3.jpg"
+              class="OT-card-img-top"
+              alt="Delta Kite"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Premier Kites Delta Kite</h5>
+              <p class="OT-card-text text-muted mb-2">
+                Classic shape known for easy launching and stable flight.
+              </p>
+              <div class="price mb-3">Rs. 6000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS4.jpg"
+              class="OT-card-img-top"
+              alt="Kids Three-Wheel Scooter"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Catch Paddle Set
+              </h5>
+              <p class="OT-card-text text-muted mb-2">colorful foam paddles with velcro/ball targets</p>
+              <div class="price mb-3">Rs. 1200</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 1 -->
+
+      <!-- Start of Row 2 -->
+      <div class="row g-4 mb-4">
+        <!-- OT-card 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS5.jpg"
+              class="OT-card-img-top"
+              alt="Skateboard"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Adventure Kit</h5>
+              <p class="OT-card-text text-muted mb-2">binoculars, compass, whistle, torch in a pack</p>
+              <div class="price mb-3">rs. 3000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 6: Jump Rope -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS6.jpg"
+              class="OT-card-img-top"
+              alt="Jump Rope"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Little Tikes 4-in-1 Trike
+              </h5>
+              <p class="OT-card-text text-muted mb-2">Converts from a push-stroller to a child-powered trike.</p>
+              <div class="price mb-3">Rs. 5200</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 7 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS7.jpg"
+              class="OT-card-img-top"
+              alt="Beginner Telescope"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Water Playset
+              </h5>
+              <p class="OT-card-text text-muted mb-2">tabletop water/target play station (targets, balls, posts).</p>
+              <div class="price mb-3">Rs. 7000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 8 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS8.jpg"
+              class="OT-card-img-top"
+              alt="Pop-Up Camping Tent"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">SecureSeat Toddler Swing</h5>
+              <p class="OT-card-text text-muted mb-2">
+                A best toy for day fun.
+              </p>
+              <div class="price mb-3">Rs. 4000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 2 -->
+
+      <!-- Start of Row 3 -->
+      <div class="row g-4 mb-4">  
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS9.jpg"
+              class="OT-card-img-top"
+              alt="Badminton Set"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Bowling Set</h5>
+              <p class="OT-card-text text-muted mb-2">
+                colorful plastic bowling pins & ball
+              </p>
+              <div class="price mb-3">Rs. 1800</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 10 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS10.jpg"
+              class="OT-card-img-top"
+              alt="Mega Water Gun"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Basketball Shooter
+              </h5>
+              <p class="OT-card-text text-muted mb-2">mini pop-up basketball game with ball return</p>
+              <div class="price mb-3">Rs. 9000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 11 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS11.jpg"
+              class="OT-card-img-top"
+              alt="Pogo Stick"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Rainbow Play Ball Pack</h5>
+              <p class="OT-card-text text-muted mb-2">large assortment of colorful plastic ball-pit balls</p>
+              <div class="price mb-3">Rs. 1300</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 12 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS12.jpg"
+              class="OT-card-img-top"
+              alt="Weighted Hula Hoop"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Sand Play Set
+              </h5>
+              <p class="OT-card-text text-muted mb-2">
+                bucket, shovel, molds and sifter kit
+              </p>
+              <div class="price mb-3">Rs. 3500</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 3 -->
+
+      <!-- Start of Row 4 -->
+      <div class="row g-4">
+        <!-- OT-card 13-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS13.jpg"
+              class="OT-card-img-top"
+              alt="T-Ball Set"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">HopRing Agility Course</h5>
+              <p class="OT-card-text text-muted mb-2">
+                linked colored rings for running/jumping drills
+              </p>
+              <div class="price mb-3">Rs. 1100</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 14 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS14.jpg"
+              class="OT-card-img-top"
+              alt="Automatic Bubble Machine"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                Starter Cricket Set
+              </h5>
+              <p class="OT-card-text text-muted mb-2">plastic bat, stumps and soft practice balls</p>
+              <div class="price mb-3">Rs. 2000</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 15 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS15.jpg"
+              class="OT-card-img-top"
+              alt="Walkie Talkie Set"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">
+                HoverKick Air Soccer
+              </h5>
+              <p class="OT-card-text text-muted mb-2">light hover-soccer disk with soft bumperse</p>
+              <div class="price mb-3">Rs. 1500</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OT-card 16 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="OT-card">
+            <img
+              src="Assets/Images/OS16.jpg"
+              class="OT-card-img-top"
+              alt="Tree Swing"
+            />
+            <div class="OT-card-body text-center">
+              <h5 class="OT-card-title fw-semibold">Spinning Top</h5>
+              <p class="OT-card-text text-muted mb-2">
+                traditional wooden/string top toy
+              </p>
+              <div class="price mb-3">Rs. 600</div>
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm rounded-pill"
+                  >Add to Cart</a
+                >
+                <a href="#" class="btn btn-buy btn-sm rounded-pill"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Row 4 -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>ToyoToys</h5>
+            <p>
+              Bringing joy and imagination to children everywhere with safe,
+              fun, and creative toys.
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="newarrivals.html">New Arrivals</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+              <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+              <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+              <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Contact Us</h5>
+            <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+            <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+ 
+
+</body>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+></script>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Compare Dolls</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f6f8ff, #e3f2fd);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .compare-container {
+      margin-top: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .toy-card {
+      position: relative;
+      background: rgb(247, 215, 220);
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .toy-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .toy-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .toy-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .toy-info h2 {
+      color: #333;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: rgb(201, 72, 115);
+      margin-bottom: 12px;
+    }
+
+    .features {
+      text-align: left;
+      color: #444;
+      font-size: 0.95rem;
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 15px;
+    }
+
+    .features li {
+      text-align: center;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 8px 20px;
+      background-color: rgb(201, 72, 115);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: white;
+      color: rgb(201, 72, 115);
+    }
+
+    /* Recommended Badge */
+    .recommended-badge {
+      position: absolute;
+      top: 16px;
+      left: -50px;
+      background: #ff4081;
+      color: white;
+      padding: 6px 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transform: rotate(-45deg);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 70px;
+      text-decoration: none;
+      color: #124985;
+      ;
+      font-weight: bold;
+      font-size: large;
+      margin-bottom: 6%;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .compare-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TAG LINE  -->
+
+  <div class="tag-linebox">
+    <p class="tag-line montserrat-regular">Free Delivery on orders above 2000Rs</p>
+  </div>
+
+  <!-- NAVBAR STARTED  -->
+
+  <nav class="navbar navbar-expand-lg  montserrat-regular">
+    <div class="container">
+      <a class="navbar-brand pacifico-regular" href="#">ToyoToys</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byAgeDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Age
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="Age1-3.html">Age 1 - 3</a></li>
+              <li><a class="dropdown-item" href="Age4-6.html">Age 4 - 6</a></li>
+              <li><a class="dropdown-item" href="Age7-9.html">Age 7 - 9</a></li>
+              <li><a class="dropdown-item" href="Age9+.html">Age 9+</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byBrandDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Brand
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byAgeDropdown">
+              <li><a class="dropdown-item" href="legobrand.html">Lego Toys</a></li>
+              <li><a class="dropdown-item" href="HOTWHEELS.HTML">Hot Wheels Toys</a></li>
+              <li><a class="dropdown-item" href="barbiebrand.html">Barbie Toys</a></li>
+              <li><a class="dropdown-item" href="disney.html">Disney Toys</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="byCategoryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="byCategoryDropdown">
+              <li><a class="dropdown-item" href="OT-cards.html">Outdoor and Sports</a></li>
+              <li><a class="dropdown-item" href="Dolls.html">Dolls </a></li>
+              <li><a class="dropdown-item" href="AF-cards.html">RC and Action FIgures</a></li>
+              <li><a class="dropdown-item" href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+        <!-- SEARCH INPUT  -->
+
+        <!-- From Uiverse.io by LightAndy1 -->
+        <div class="group">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+              </path>
+            </g>
+          </svg>
+
+          <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR ENDED -->
+
+  <h1 style="margin-top: 3%;" class="heading montserrat-regular">Compare Doll-House</h1>
+
+  <div class="compare-container">
+
+    <!-- Toy 1 -->
+    <div class="toy-card">
+      <div class="recommended-badge">Recommended</div>
+      <img style="height: 300px;" src="Assets/Images/Doll-4.jpg" alt="Racer X" class="toy-img">
+      <div class="toy-info">
+        <h2>Disney Frozen Ice Castle Dollhouse</h2>
+        <p class="price">Rs. 4000</p>
+        <ul class="features">
+          <li>Nine display</li>
+          <li>Iconic ice castle</li>
+          <li>Multi tier storage</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Toy 2  -->
+    <div class="toy-card">
+      <img style="height: 300px;" src="Assets/Images/Doll-1.jpg" alt="SuperCar Z" class="toy-img">
+      <div class="toy-info">
+        <h2>Pink Multi-Storey Doll House</h2>
+        <p class="price">Rs. 4000</p>
+        <ul class="features">
+          <li>Two story house design</li>
+          <li>Comes with accessories</li>
+          <li>Bright, appealing pink colors</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Toy 3 -->
+    <div class="toy-card">
+      <img style="height: 300px;" src="Assets/Images/Doll-10.jpg" alt="Lightning V" class="toy-img">
+      <div class="toy-info">
+        <h2>Cute Pink Indoor<br> Play Tent</h2>
+        <p class="price">Rs. 2000</p>
+        <ul class="features">
+          <li>Lowest price point</li>
+          <li>Ideal for children</li>
+          <li>Easy setup, portable</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="index.html#compare-sec" class="back-link">← Back to Compare Categories</a>
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>ToyoToys</h5>
+            <p>
+              Bringing joy and imagination to children everywhere with safe,
+              fun, and creative toys.
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="newarrivals.html">New Arrivals</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="OT-cards.html">Outdoor & Sports</a></li>
+              <li><a href="Dolls.html">Dolls & Doll Houses</a></li>
+              <li><a href="AF-cards.html">RC and Action Figrues</a></li>
+              <li><a href="Stuff-cards.html">Stuffed Toys</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Contact Us</h5>
+            <p><a href="mailto:toyotoys@gmai.com">Email: toyotoys@gmail.com</a></p>
+            <p><a href="tel:03182925717">Phone: +92 (318) 292-5717</a></p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 ToyoToys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+</script>
+</html>
