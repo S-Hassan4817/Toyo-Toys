@@ -20,9 +20,9 @@ The goal of this project was to design a responsive, user-friendly interface tha
 ---
 
 ## 👨‍💻 About the Developer
-My name is **Hassan Ali**, a 16-year-old passionate Frontend Developer currently building my foundation in Computer Science.
+My name is **Hassan Ali**, a 17-year-old passionate Software Developer currently building my foundation in Computer Science.
 
-* **Academic Path:** Currently in **HSSC Part 1 (ICS)**, specializing in Computer Science.
+* **Academic Path:** Currently in **HSSC Part 2 (ICS)**, specializing in Computer Science.
 * **Professional Training:** Pursuing a **Diploma in Information System Management (DISM)** at Aptech Pakistan.
 * **Goal:** My mission is to become a Software Engineer. After my HSSC and DISM, I plan to pursue a formal **BS in Computer Science** to further refine my programming expertise.
 
